@@ -1,0 +1,90 @@
+/* initial load for non-standalone */
+#navigation, #entries, #results, #iphone_footer, #info {
+    display: none;
+}
+
+body {
+    margin: 0px;
+}
+
+table#navigation {
+    background-image: url(Images/bg-head.png);
+    background-color: rgb(129, 149, 175);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 44px;
+    padding: 0px;
+    margin: 0px 0px 25px 0px;
+    text-shadow: rgba(0, 0, 0, 0.6875) 0px -1px 0px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+table#navigation td {
+    padding: 0px;
+    margin: 0px;
+    line-height: 10px;
+}
+
+table#navigation td:first-child, table#navigation td:last-child {
+    width: 25%;
+}
+
+table#results {
+    margin: 0px auto;
+}
+
+table#results tr th {
+    display: none;
+}
+
+table#results {
+    font-size: 150%;
+}
+
+table#results td:first-child {
+    padding-right: 20px;
+}
+
+table#results td:last-child {
+    text-align: right;
+}
+
+#options {
+    display: none;
+}
+
+#info {
+    display: none;
+}
+
+#iphone_warning {
+    padding: 20px;
+    margin: 20px;
+    display: none;
+}
+
+/* stock stuff */
+#iphone_footer {
+    position: relative;
+    font-family: Helvetica;
+    font-size: 10pt;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: rgb(76, 86, 108);
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    -webkit-margin-top-collapse: separate;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content {
+    position: relative;
+    -webkit-margin-top-collapse: separate;
+    -webkit-margin-bottom-collapse: separate;
+    min-height: 326px;
+    height: auto;
+    width: auto;
+}

@@ -1,0 +1,311 @@
+body {
+    font-family: Helvetica;
+    text-align: center;
+}
+
+table#navigation {
+    margin: auto;
+    font-size: 200%;
+}
+
+table#navigation td {
+    min-width: 60px;
+}
+
+table#entries {
+    text-align: left;
+}
+
+table#navigation td {
+    text-align: center;
+}
+
+a, img {
+    text-decoration:none;
+    border: none;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    padding: 1px 4px;
+    vertical-align: middle;
+}
+
+tr {
+    padding: 0px;
+    margin: 0px;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #CCC;
+    padding: 4px;
+    font-family: sans-serif, Helvetica;
+    font-size: 14px;
+}
+
+
+td.time input {
+    width: 40px;
+}
+
+td.project input {
+    width: 95px;
+}
+
+td.description input {
+    /*width: 338px;*/
+}
+
+tr.total td {
+    text-align: right;
+    border-top: 2px solid black;
+    padding-top: 10px;
+}
+tr.insert td {
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    height: 10px;
+}
+tr.insert td span{
+    cursor: pointer;
+    color: white;
+    background-color: #BBB;
+    padding: 1px 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+}
+
+table#results td {
+    text-align: left;
+}
+table#results td.totalTime {
+    text-align: right;
+}
+
+/* ------------------------ info and tools ------------------ */
+
+#toolsButton:hover, #infoButton:hover {
+    cursor: pointer;
+}
+
+img.bottomButton {
+    padding: 7px;
+    position: fixed;
+    bottom: 0px;
+    -webkit-transition-property: margin;
+    -webkit-transition-duration: .2s;
+}
+img#infoButton {
+    left: 0px;
+}
+img#toolsButton {
+    right: 0px;
+}
+
+div.slider {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    text-align: left;
+    background-color: black;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    font-size: 15px;
+    z-index: 1;
+    -webkit-box-shadow: 0px 0px 0px black;
+    -webkit-transition-property: height;
+    -webkit-transition-duration: .2s;
+}
+div.slider b {
+    display: block;
+}
+#desc {
+    color: white;
+}
+#desc.clicked, #tools.clicked {
+    -webkit-box-shadow: 0px 0px 25px black;
+}
+#desc.infoClicked {
+    height: 200px;
+}
+img.infoClicked {
+    margin-bottom: 200px;
+}
+#tools.toolsClicked {
+    height: 220px;
+}
+img.toolsClicked {
+    margin-bottom: 220px;
+}
+div.slider ul {
+    margin: 0px;
+    padding: 0px;
+}
+#desc ul li {
+    float:left;
+    width: 33.3%;
+    height: 80px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+#tools ul li {
+    float:right;
+    width: 250px;
+    padding: 0px;
+    margin: 5px 10px;
+    list-style-type: none;
+}
+div.slider ul li p {
+    padding: 5px;
+    margin: 0px;
+}
+div.slider ul li b {
+    background-color: #333;
+    padding: 4px;
+    border-radius: 5px;
+    margin-bottom: 4px;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+}
+#tools li {
+    margin: 5px;
+    text-align: center;
+    color: white;
+}
+#tools li#insertRow a {
+    display: block;
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+div.slider li#insertDay b {
+    background-color: transparent;
+    margin: 0px 0px 2px 0px;
+}
+#datePicker div {
+    margin: auto;
+}
+#datePicker, #datePicker td, #datePicker .ui-datepicker-title {
+    font-size: 11px;
+    color: black;
+}
+
+/* ------------------------ alert ------------------ */
+#alert {
+    width: 400px;
+    bottom: 0px;
+    position: fixed;
+    left: 50%;
+    margin-left: -200px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+}
+
+/* -------------------------- DESKTOP ONLY --------------------------------- */
+
+body {
+    margin: 20px 50px;
+} 
+
+td.time {
+    width: 50px;
+}
+
+td.project {
+    width: 100px;
+}
+
+td.description, td.description input {
+    width: 100%;
+}
+
+td.elapsed {
+    width: 40px;
+    text-align: right;
+}
+td.break {
+    color: #BBB;
+}
+
+tr.total td {
+    text-align: right;
+    border-top: 2px solid black;
+    padding-top: 10px;
+}
+
+table#results {
+    margin: 100px auto;
+    width: 50%;
+}
+
+table#results td ul {
+    margin-top: 0px;
+}
+
+table#results td.project {
+    padding-right: 100px;
+}
+
+
+/* summary options */
+    table#results th#options {
+        font-size: 11px;
+        font-weight: normal;
+    }
+
+    table#results th#options label {
+        padding-right: 5px;
+    }
+
+    table#results th#options input {
+        width: auto;
+    }
+    
+    table#results pre {
+        margin: 0px;
+        padding-bottom: 10px;
+    }
+
+/* iPhone footer */
+    #iphone_footer, #iphone_warning {
+        display: none;
+    }
+
+/*
+tr {
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: 1s; 
+    -webkit-transition-timing-function: ease;
+    -webkit-transform: translate(0px, 0px);
+    z-index:200;
+}
+
+tr, tr td, tr td input {
+    -webkit-transform: translate(0px, 0px);
+}
+
+tr.hidden {
+    -webkit-transform: translate(0px, -33px);
+    z-index:1;
+}
+*/ 
+
+
+/* new version of chrome fix */
+.ui-helper-hidden-accessible,
+#ui-datepicker-div { left: -999999px; }
