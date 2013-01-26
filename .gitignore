@@ -1,5 +1,3 @@
-# gcc coverage testing tool files
+# password stuff
 
-*.gcno
-*.gcda
-*.gcov
+passwords.php
